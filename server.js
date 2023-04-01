@@ -3,7 +3,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-    res.send('<h1 style="color:blue">Hola Mundo!!!</h1>')
+    res.status(200).send('<h1 style="color:blue">Hola Mundo!!!</h1>')
 })
 
 app.get('/user', (req, res) => {
